@@ -96,5 +96,9 @@ files:
         print("You are hanged!")
   learner_created: false
 feedback_link: https://hyperskill.org/projects/69/stages/374/implement
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/69/stages/374/implement">JetBrains
+    Academy</a>
+  time: Sun, 05 Jul 2020 17:25:42 UTC
+record: 3
