@@ -54,9 +54,11 @@ global word_needed
 word_needed = random.choice(words)
 hidden_word = list('-' * len(word_needed))
 
-# print("H A N G M A N")
+print("H A N G M A N")
+
 tries = 8
 while tries > 0:
+    print()
     print("".join(hidden_word))
     print("Input a letter:")
     letter = input()
