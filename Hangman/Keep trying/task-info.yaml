@@ -175,8 +175,9 @@ files:
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/projects/69/stages/376/implement
-status: Unchecked
+status: Solved
 feedback:
-  message: No Python interpreter
-  time: Sat, 11 Jul 2020 07:29:17 UTC
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/69/stages/376/implement">JetBrains
+    Academy</a>
+  time: Sun, 12 Jul 2020 08:40:52 UTC
 record: -1
