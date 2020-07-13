@@ -132,15 +132,17 @@
 # ---------------------------7---------------------------
 import random
 
-# добавить сет для букв которые уже ранее вводились
+
 def check_letter(_letter):
+    global letters_to_guess
     if len(_letter) > 1:
         return -4
-    if not letter.isascii():
+    if not letter.islower():
         return -3
     if letter in letters_chosen:
         return -2
     if letter not in word_needed:
+        letters_chosen.add(_letter)
         return -1
     letters_chosen.add(_letter)
     count = word_needed.count(_letter)
@@ -150,6 +152,7 @@ def check_letter(_letter):
         position = word_needed.find(_letter, start)
         start = position + 1
         positions.append(position)
+    letters_to_guess -= 1
     return positions
 
 
@@ -157,10 +160,11 @@ words = ['python', 'java', 'kotlin', 'javascript']
 
 global word_needed
 global letters_chosen
+global letters_to_guess
 letters_chosen = set()
 word_needed = random.choice(words)
-hidden_word = list('-' * len(word_needed))
 letters_to_guess = len(set(word_needed))
+hidden_word = list('-' * len(word_needed))
 
 print("H A N G M A N")
 
@@ -183,7 +187,7 @@ while tries > 0:
     else:
         for j in result:
             hidden_word[j] = letter
-    if len(letters_chosen) == letters_to_guess:
+    if letters_to_guess == 0:
         print()
         print("".join(hidden_word))
         print("""You guessed the word!
