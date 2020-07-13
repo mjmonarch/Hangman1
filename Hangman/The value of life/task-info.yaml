@@ -231,6 +231,13 @@ files:
     if __name__ == '__main__':
         CoffeeMachineTest('hangman.hangman').run_tests()
   learner_created: false
+- name: hangman/hangman.py
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/69/stages/377/implement
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/69/stages/377/implement">JetBrains
+    Academy</a>
+  time: Sun, 12 Jul 2020 16:40:09 UTC
+record: 6
